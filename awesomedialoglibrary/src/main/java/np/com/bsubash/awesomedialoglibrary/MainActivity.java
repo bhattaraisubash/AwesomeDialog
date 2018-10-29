@@ -1,0 +1,19 @@
+package np.com.bsubash.awesomedialoglibrary;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        AwesomeAlertDialog dialog = new AwesomeAlertDialog(this, AwesomeAlertDialog.SUCCESS_TYPE);
+        dialog.setTitleText("Its Working");
+        dialog.setConfirmText("OK");
+        dialog.setCancelClickListener(sweetAlertDialog -> finish());
+        dialog.setCancelText("Exit");
+        dialog.show();
+    }
+}
