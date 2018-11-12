@@ -34,6 +34,12 @@ Step 2. Add the dependency
 	        implementation 'com.github.bhattaraisubash:AwesomeDialog:v1.0'
 	}
 
+Step 3. Add this to proguard-rules.pro
+
+	-keep class np.com.bsubash.awesomedialoglibrary.Rotate3dAnimation {
+	  public <init>(...);
+	}
+
 ## Usage
 
 show material progress
