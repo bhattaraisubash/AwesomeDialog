@@ -31,7 +31,13 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        implementation 'com.github.bhattaraisubash:AwesomeAlertDialog:v1.0'
+	        implementation 'com.github.bhattaraisubash:AwesomeDialog:v1.0'
+	}
+
+Step 3. Add this to proguard-rules.pro
+
+	-keep class np.com.bsubash.awesomedialoglibrary.Rotate3dAnimation {
+	  public <init>(...);
 	}
 
 ## Usage
