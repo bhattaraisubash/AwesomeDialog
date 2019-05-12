@@ -1,8 +1,8 @@
 package np.com.bsubash.awesomedialog;
 
 import android.app.Dialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import np.com.bsubash.awesomedialoglibrary.AwesomeAlertDialog;
 
